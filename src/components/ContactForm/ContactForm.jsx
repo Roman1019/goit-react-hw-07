@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 import css from "./ContactForm.module.css";
 import { useId } from "react";
 import { useDispatch } from "react-redux";
-import { addContact } from "../../redux/contactsSlice.js";
+import { addContact } from "../../redux/contactsOps.js";
 
 const UserSchema = Yup.object().shape({
   name: Yup.string().min(3, "Too short").max(50).required("Required"),
